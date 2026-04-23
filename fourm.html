@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="fourm.css">
+</head>
+<body>
+
+<div class="container">
+  <form id="contactForm" novalidate>
+    <h2>Form Validation</h2>
+
+    <div class="input-group">
+      <input type="text" id="name" required>
+      <label>Name</label>
+      <small class="error-text"></small>
+    </div>
+
+    <div class="input-group">
+      <input type="email" id="email" required>
+      <label>Email Address</label>
+      <small class="error-text"></small>
+    </div>
+
+    <div class="input-group">
+      <textarea id="message" required maxlength="200"></textarea>
+      <label>Your Message</label>
+      <small class="error-text"></small>
+      <span id="charCount">0/200</span>
+    </div>
+
+    <button type="submit" id="submitBtn">
+      <span class="btn-text">Send Message</span>
+      <span class="loader"></span>
+    </button>
+
+    <p id="formMessage"></p>
+  </form>
+</div>
+
+<script src="fourm.js"></script>
+</body>
+</html>
